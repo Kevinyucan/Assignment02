@@ -130,33 +130,15 @@ public class A2Q5 {
                   if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
                     karel.pickThing();
                 }
-                  karel.turnLeft();  //1ST TURN: TURN RIGHT
+                  karel.turnLeft();  
                   karel.turnLeft();
-                  karel.turnLeft();
+                  
+                  
                   if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
                     karel.pickThing();
                 }
                   }
-                if (karel.frontIsClear() && karel.getDirection()==Direction.SOUTH && karel.getAvenue()==2 == false){
-                      if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
-                    karel.pickThing();
-                }
-                    karel.move();
-                    if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
-                    karel.pickThing();
-                }
-                }else if (!karel.frontIsClear() && karel.getDirection()==Direction.SOUTH && karel.getAvenue()==2 == false){
-                 if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
-                    karel.pickThing();
-                }
-    
-                  karel.turnLeft();  //2ND TURN: TURN RIGHT
-                  karel.turnLeft();
-                  karel.turnLeft();   
-                  if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
-                    karel.pickThing();
-                }
-                }
+                
                 
                 if (karel.frontIsClear() && karel.getDirection()==Direction.WEST && karel.getAvenue()==2 == false){
                     if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
@@ -166,9 +148,9 @@ public class A2Q5 {
                     if (karel.canPickThing() && karel.getAvenue()==2==false ){ //asks if karel can pick thing not on sidewalk
                     karel.pickThing();
                 }
-                  }else if (!karel.frontIsClear() && karel.getDirection()==Direction.WEST ){
+                  }else if (!karel.frontIsClear() && karel.getDirection()==Direction.WEST && karel.getAvenue()==2 ){
                    
-                 karel.turnLeft(); //3RD TURN: TURN LEFT BACK ONTO STREET
+                 karel.turnLeft(); 
                  karel.putThing();
                   }
                 while (!karel.frontIsClear() && karel.getDirection()==Direction.SOUTH && karel.getAvenue()==2){
