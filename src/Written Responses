@@ -1,0 +1,12 @@
+1 a) true
+b) true
+c) false
+d) false
+e) false
+f) true
+g) false
+h) true
+
+2. Yes they behave the same. The first one says to turn right if it can pick thing, and turn left if it can't. 
+The second one says to turn left if it can't pick thing, and to turn right if it can. Essentially, it says the same
+thing in reverse order.
